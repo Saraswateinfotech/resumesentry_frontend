@@ -56,7 +56,7 @@ const SignUp: React.FC = () => {
 
     try {
       const response = await fetch(
-        "https://apis.resumesentry.com/auth/signup",
+        "https://resumeentry-bend.onrender.com/auth/signup",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

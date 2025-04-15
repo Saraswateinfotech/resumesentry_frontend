@@ -33,7 +33,7 @@ const Header = (props: {
 
       try {
         const response = await axios.get(
-          `https://freelancify-backend.vercel.app/freelancer/${freelancerId}/details`,
+          `https://resumeentry-bend.onrender.com/freelancer/${freelancerId}/details`,
           {
             headers: {
               Authorization: `Bearer ${token}`, // Add token to request headers

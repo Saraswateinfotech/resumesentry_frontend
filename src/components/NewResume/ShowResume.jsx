@@ -184,7 +184,7 @@ const ShowResume = ({ row, allData }) => {
 
     try {
       const response = await fetch(
-        "https://apis.resumesentry.com/resumes/updateResumeData",
+        "https://resumeentry-bend.onrender.com/resumes/updateResumeData",
         {
           method: "POST",
           headers: {
@@ -215,7 +215,7 @@ const ShowResume = ({ row, allData }) => {
 
     try {
       const response = await fetch(
-        "https://apis.resumesentry.com/resumes/updateResumeData",
+        "https://resumeentry-bend.onrender.com/resumes/updateResumeData",
         {
           method: "POST",
           headers: {
@@ -240,7 +240,7 @@ const ShowResume = ({ row, allData }) => {
 
   // const resume_id = allData[currentIndex]?.resume_id;
   // const selectedResume = {
-  //   resume_url: `https://apis.resumesentry.com/resumes/download/${resume_id}#toolbar=0`,
+  //   resume_url: `https://resumeentry-bend.onrender.com/resumes/download/${resume_id}#toolbar=0`,
   // };
 
   // Loading state for showing the loader
@@ -253,7 +253,7 @@ const ShowResume = ({ row, allData }) => {
 
     // Simulate a delay to fetch the resume URL
     if (resume_id) {
-      const url = `https://apis.resumesentry.com/resumes/download/${resume_id}#toolbar=0`;
+      const url = `https://resumeentry-bend.onrender.com/resumes/download/${resume_id}#toolbar=0`;
 
       // Set the selected resume and stop loading
       setSelectedResume({ resume_url: url });

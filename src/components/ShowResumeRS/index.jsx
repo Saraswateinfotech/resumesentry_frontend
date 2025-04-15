@@ -175,7 +175,7 @@ const ShowResumeRS = ({ row, allData }) => {
   const resume_id = allData[currentIndex].resume_id;
   const selectedResume = {
     resume_url:
-      "https://apis.resumesentry.com/resumes/download/" +
+      "https://resumeentry-bend.onrender.com/resumes/download/" +
       resume_id +
       "#toolbar=0",
   };

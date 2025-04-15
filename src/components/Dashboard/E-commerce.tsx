@@ -42,7 +42,7 @@ const ECommerce: React.FC = () => {
     const fetchResumeStats = async () => {
       try {
         const response = await fetch(
-          "https://apis.resumesentry.com/resumes/getResumeStats",
+          "https://resumeentry-bend.onrender.com/resumes/getResumeStats",
           {
             method: "POST",
             headers: {
@@ -85,7 +85,7 @@ useEffect(() => {
             console.log("📡 Fetching payment report...");
 
             const response = await fetch(
-                "https://apis.resumesentry.com/resumes/GetUserPaymentReport",
+                "https://resumeentry-bend.onrender.com/resumes/GetUserPaymentReport",
                 {
                     method: "GET",
                     headers: {

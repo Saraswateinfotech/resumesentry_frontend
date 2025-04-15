@@ -35,7 +35,7 @@ const LogIn: React.FC = () => {
 
     try {
       const response = await fetchWithInterceptor(
-        "https://apis.resumesentry.com/auth/login",
+        "https://resumeentry-bend.onrender.com/auth/login",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

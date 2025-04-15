@@ -22,7 +22,7 @@ export const BankDetailsProvider = ({ children }) => {
     const fetchBankDetails = async () => {
       try {
         const response = await axios.get(
-          `https://apis.resumesentry.com/resumes/getBankDetails/${freelancerId}`,
+          `https://resumeentry-bend.onrender.com/resumes/getBankDetails/${freelancerId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

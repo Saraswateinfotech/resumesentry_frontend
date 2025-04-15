@@ -22,7 +22,7 @@ export const ProfileProvider = ({ children }) => {
     const fetchProfileData = async () => {
       try {
         const response = await axios.get(
-          `https://apis.resumesentry.com/freelancer/${freelancerId}/details`,
+          `https://resumeentry-bend.onrender.com/freelancer/${freelancerId}/details`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

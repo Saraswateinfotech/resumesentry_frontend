@@ -46,7 +46,7 @@ const Edit = () => {
 
       try {
         const response = await axios.get(
-          `https://apis.resumesentry.com/freelancer/${freelancerId}/details`,
+          `https://resumeentry-bend.onrender.com/freelancer/${freelancerId}/details`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -77,7 +77,7 @@ const Edit = () => {
 
     try {
       await axios.put(
-        `https://apis.resumesentry.com/freelancer/${freelancerId}/edit`,
+        `https://resumeentry-bend.onrender.com/freelancer/${freelancerId}/edit`,
         formData,
         {
           headers: {

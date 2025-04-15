@@ -30,7 +30,7 @@ const RejectedResume = () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          `https://apis.resumesentry.com/resumes/rejected/${freelancerId}`,
+          `https://resumeentry-bend.onrender.com/resumes/rejected/${freelancerId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

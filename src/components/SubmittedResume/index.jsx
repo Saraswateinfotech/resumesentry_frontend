@@ -19,7 +19,7 @@
 //     const fetchSavedResumes = async () => {
 //       try {
 //         const response = await axios.get(
-//           `https://apis.resumesentry.com/resumes/submitted/${freelancerId}`,
+//           `https://resumeentry-bend.onrender.com/resumes/submitted/${freelancerId}`,
 //         );
 //         setData(response.data); // Save fetched data to state
 //       } catch (error) {
@@ -139,7 +139,7 @@ const SubmittedResume = () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          `https://apis.resumesentry.com/resumes/submitted/${freelancerId}`,
+          `https://resumeentry-bend.onrender.com/resumes/submitted/${freelancerId}`,
 
           {
             headers: {

@@ -45,7 +45,7 @@ const Profile = () => {
 
       try {
         const response = await axios.get(
-          `https://apis.resumesentry.com/freelancer/${freelancerId}/details`,
+          `https://resumeentry-bend.onrender.com/freelancer/${freelancerId}/details`,
           {
             headers: {
               Authorization: `Bearer ${token}`, // Add token to request headers
@@ -73,7 +73,7 @@ const Profile = () => {
       setDocumentURL("");
 
       try {
-        const url = `https://apis.resumesentry.com/resumes/downloadAadharCard/${freelancerId}`;
+        const url = `https://resumeentry-bend.onrender.com/resumes/downloadAadharCard/${freelancerId}`;
         const response = await fetch(url);
 
         if (!response.ok) {

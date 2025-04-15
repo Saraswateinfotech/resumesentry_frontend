@@ -29,7 +29,7 @@ const ForgotPassword = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://apis.resumesentry.com/auth/forgot-password", {
+      const response = await fetch("https://resumeentry-bend.onrender.com/auth/forgot-password", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),

@@ -124,7 +124,7 @@ const NewResume = () => {
 
         if (current_resume_id) {
           const res = await fetch(
-            `https://freelancify-backend.vercel.app/resumes/saved/${freelancerId}`,
+            `https://resumeentry-bend.onrender.com/resumes/saved/${freelancerId}`,
             {
               headers: {
                 Authorization: `Bearer ${token}`,
@@ -176,7 +176,7 @@ const NewResume = () => {
   const selectedResume = {
     no: `${currentIndex}`,
     resumeid: `${currentIndex}`,
-    resume_url: `https://freelancify-backend.vercel.app/resumes/download/${currentIndex}#toolbar=0`,
+    resume_url: `https://resumeentry-bend.onrender.com/resumes/download/${currentIndex}#toolbar=0`,
   };
 
   // Function to handle "Next" button click
@@ -196,7 +196,7 @@ const NewResume = () => {
 
     try {
       const response = await fetch(
-        `https://freelancify-backend.vercel.app/freelancer/updateFreelancerResume/${freelancerId}`,
+        `https://resumeentry-bend.onrender.com/freelancer/updateFreelancerResume/${freelancerId}`,
         {
           method: "PUT",
           headers: {
@@ -418,7 +418,7 @@ const NewResume = () => {
 
     try {
       const response = await fetch(
-        "https://freelancify-backend.vercel.app/resumes/save",
+        "https://resumeentry-bend.onrender.com/resumes/save",
         {
           method: "POST",
           headers: {
@@ -462,7 +462,7 @@ const NewResume = () => {
 
     try {
       const response = await fetch(
-        "https://freelancify-backend.vercel.app/resumes/save",
+        "https://resumeentry-bend.onrender.com/resumes/save",
         {
           method: "POST",
           headers: {

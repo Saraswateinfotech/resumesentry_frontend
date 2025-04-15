@@ -41,7 +41,7 @@ const AddBank = () => {
 
       try {
         const response = await axios.get(
-          `https://apis.resumesentry.com/resumes/getBankDetails/${freelancer_id}`,
+          `https://resumeentry-bend.onrender.com/resumes/getBankDetails/${freelancer_id}`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -91,7 +91,7 @@ const AddBank = () => {
 
     try {
       const response = await fetch(
-        "https://apis.resumesentry.com/resumes/saveOrUpdateBankDetails",
+        "https://resumeentry-bend.onrender.com/resumes/saveOrUpdateBankDetails",
         {
           method: "POST",
           headers: {

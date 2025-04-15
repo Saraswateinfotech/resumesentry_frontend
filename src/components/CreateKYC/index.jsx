@@ -53,7 +53,7 @@ const CreateKYC = () => {
 
     try {
       const response1 = await fetch(
-        `https://apis.resumesentry.com/resumes/uploadAadharCard/${freelancerId}`,
+        `https://resumeentry-bend.onrender.com/resumes/uploadAadharCard/${freelancerId}`,
         {
           method: "POST",
           headers: { Authorization: `Bearer ${token}` },
@@ -62,7 +62,7 @@ const CreateKYC = () => {
       );
 
       const response2 = await fetch(
-        `https://apis.resumesentry.com/resumes/uploadAddressCard/${freelancerId}`,
+        `https://resumeentry-bend.onrender.com/resumes/uploadAddressCard/${freelancerId}`,
         {
           method: "POST",
           headers: { Authorization: `Bearer ${token}` },

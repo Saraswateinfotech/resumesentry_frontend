@@ -30,7 +30,7 @@ const SavedResume = () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          `https://apis.resumesentry.com/resumes/saved/${freelancerId}`,
+          `https://resumeentry-bend.onrender.com/resumes/saved/${freelancerId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
